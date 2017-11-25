@@ -30,7 +30,7 @@ RUN git clone ${GIT_REPO} ${APP_HOME}
 RUN echo "gem 'unicorn'" >> Gemfile
 COPY config/database.yml ${APP_HOME}/config/database.yml
 
-RUN bundle install
+RUN bundle install --without sqlite mysql development test --deployment
 RUN bundle exec rake assets:precompile
 
 COPY config/unicorn.rb ${UNICORN_CONFIG}
