@@ -27,10 +27,10 @@ $ docker run --name my-brimir -e MYSQL_HOST=localhost -e MYSQL_DATABASE=brimir -
 
 Name                | Default             | Value
 ------------------- | ------------------- | -------------
-MYSQL_HOST          | mysql               | Mysql server hostname
-MYSQL_DATABASE      | -                   | Mysql database name
-MYSQL_USER          | -                   | Mysql database username
-MYSQL_PASSWORD      | -                   | Mysql Password
+POSTGRES_HOST       | postgreql           | Postgresql server hostname
+POSTGRES_DATABASE   | -                   | Postgresql database name
+POSTGRES_USER       | -                   | Postgresql database username
+POSTGRES_PASSWORD   | -                   | Postgresql Password
 UNICORN_WORKERS     | 2                   | Number of Unicorn workers
 UNICORN_TIMEOUT     | 30                  | Timeout of unicorn
 UNICORN_PORT        | 3000                | Unicorn port number
